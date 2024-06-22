@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+	<title>Contato</title>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Trabalho escolar sobre o sistema solar">
+        <meta name="keywords" content="Trabalho, sistema solar, planetas, asteroides">
+        <meta name="author" content="Barbara Nobre">
+        <link rel="icon" type="image/icon" href="img/ml_logo2.png">
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="img/icone.png">
+	<script language="javascript" type="text/javascript">
+		function vali(){
+			var nome form1.nome.value;
+			var email form1.email.value;
+			var nota form1.nota.value;
+
+			if(nome == ""){
+			alert("Preencha o campo com o seu nome");
+			form1.nome.focus();
+			return false;
+			}
+
+			if(email == ""){
+			alert("Preencha o campo com o seu email");
+			form1.email.focus();
+			return false;
+			}
+
+			if(cemail == ""){
+			alert("Preencha o campo com a confirmação do email");
+			form1.cemail.focus();
+			return false;
+			}
+
+			if(cemail! email){
+			alert("Emails diferentes");
+			form1.cemail.focus();
+			return false;
+			}
+
+			if(nota == ""){
+			alert("Selecione o sua nota");
+			form1.nota.focus();
+			return false;
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<nav id="menu">
+            <ul>
+				<li><img src="img/astronomia.png"><li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planetas.html">Planetas</a>
+					<ul>
+						<li><a href="mercurio.html">Mercúrio</a></li>
+						<li><a href="venus.html">Vênus</a></li>
+						<li><a href="terra.html">Terra</a></li>
+						<li><a href="marte.html">Marte</a></li>
+						<li><a href="jupiter.html">Júpiter</a></li>
+						<li><a href="saturno.html">Saturno</a></li>
+						<li><a href="urano.html">Urano</a></li>
+						<li><a href="netuno.html">Netuno</a></li>
+					</ul>
+		</li>
+                <li>
+                    <a href="asteroides.html">Asteroides</a>
+                </li>
+                <li>
+                    <a href="curiosidades.html">Curiosidades</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+	<h2>Preencha os dados abaixo!</h2><br><br><br>
+	<form name="form1" action="confirmacao.html" method="post" onsubmit="return vali()">
+		Nome: <input name="nome" type="text"><br>
+		Email: <input name="email" type="text"><br>
+		Confirmação: <input name="cemail" type="text"><br>
+		Nota: <select name="nota">
+		<option>
+		<option> 0
+		<option> 1
+		<option> 2
+		<option> 3
+		<option> 4
+		<option> 5
+		<option> 6
+		<option> 7
+		<option> 8
+		<option> 9
+		<option> 10
+		</select><br>
+		<br>Deixe seu comentario: <br>
+		<textarea cols="40" rows="15" name="comentario"></textarea><br><br>
+		<input type="submit" value="ENVIAR">
+		<input type="reset" value="CANCELAR">
+	</form>
+	<div align="right"> <a href="#"> <img src="img/ancora.png" width="2%"></a></div>
+	<h5>Barbara Nobre 2024 - &copyTodos os direitos reservados<br>Trabalho Acadêmico sem fins lucrativos</h5></center>
+	</body>
+</html>
