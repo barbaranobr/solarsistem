@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+        background-color: #696969;
+}
+#menu {
+	width: 100%;
+    background-color:#363636;
+	height: 80px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    z-index: 2;
+}
+#menu img {
+	margin-top: 7px;
+	padding: 10px;
+	width: 65px;
+}
+#menu ul li {
+    color: aliceblue;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+	align-items:center;
+    line-height: 40px;
+    float: left;
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+}
+#menu ul li a {
+    color: #C0C0C0;
+    padding: 20px;
+	text-decoration: none;
+    display: inline-block;
+}
+#menu ul li a:hover {
+    transition: 0.5;
+    color: rgb(3, 3, 48);
+    background-color:#A9A9A9;
+}
+#menu ul li:hover ul{
+	display:block;
+}
+#menu ul ul {
+	display: none;
+}
+#menu ul li ul li a {
+	padding: 10px;
+	background-color:#483D8B;
+	width: 150px;
+	height: 60px;
+	line-height: 40px;
+	color: azureblue;
+}
+
+.tabela ul li img{
+    position: static;
+    padding-top: 50px;
+}
+.tabela ul li p {
+    background-color: #483D8B;
+    margin-right: 150px;
+    display: block; 
+    padding-top: 30px;
+}
+.tabela img {
+    
+    border: 10px solid white;
+    float: left; 
+}
+.texto{
+	text-shadow:
+   		1px 1px 2px white,
+    		0 0 1em #FF4500,
+    		0 0 0.2em #FF4500;
+  	color: black;
+	font-size:40px;
+}
+.texto2{
+	text-shadow:
+   		1px 1px 2px #1C1C1C;
+    		0 0 2em #000080;
+    		0 0 0.5em #000080;
+  	color: #DAA520;
+	font-size:50px;
+}
+textarea {
+  resize: none;
+}
